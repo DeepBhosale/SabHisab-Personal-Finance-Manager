@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css"><title>SabHisab - Budgets</title></head>
+<body><div class="app"><aside class="sidebar">
+<div class="logo"><h1>SabHisab</h1><p>Personal Finance</p></div>
+<nav class="sidebar-nav">
+<a href="index.html">Dashboard</a>
+<a href="transactions.html">Transactions</a>
+<a href="budgets.html">Budgets</a>
+<a href="goals.html">Goals</a>
+<a href="accounts.html">Accounts</a>
+<a href="reports.html">Reports</a>
+<a href="settings.html">Settings</a>
+</nav>
+</aside><div class="main-area"><header class="topbar">
+<div><p class="welcome-label">Financial Overview</p><h2>Welcome, <span data-user-name></span> 👋</h2></div>
+<div class="profile"><div class="profile-avatar" data-user-initials></div><span data-user-name></span></div>
+</header>
+<main class="page-container">
+<section class="page-header"><div><p class="eyebrow">Spending control</p><h1>Budgets</h1><p class="page-description">Set monthly limits for your spending categories.</p></div></section>
+<section class="budget-overview">
+<article class="card"><p class="card-label">Total Budget</p><strong data-total-budget>₹0</strong></article>
+<article class="card"><p class="card-label">Total Spent</p><strong class="expense-text" data-total-spent>₹0</strong></article>
+<article class="card"><p class="card-label">Remaining</p><strong class="income-text" data-remaining>₹0</strong></article>
+</section>
+<section class="card"><div class="card-header"><div><p class="eyebrow">Monthly limits</p><h2>Budget Categories</h2></div></div><div class="budget-grid" id="budget-list"></div></section>
+</main></div></div>
+<script src="js/app.js"></script><script src="js/budgets.js"></script>
+</body></html>

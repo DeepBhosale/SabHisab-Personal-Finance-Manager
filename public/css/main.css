@@ -1,0 +1,11 @@
+:root{--primary:#2563eb;--primary-light:#eff6ff;--background:#f8fafc;--surface:#fff;--text:#111827;--muted:#6b7280;--border:#e5e7eb;--success:#16a34a;--success-light:#f0fdf4;--danger:#dc2626;--danger-light:#fef2f2;--warning:#d97706;--warning-light:#fffbeb;--sidebar:240px;--radius:14px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:var(--background);color:var(--text)}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}
+.app{min-height:100vh}.sidebar{position:fixed;inset:0 auto 0 0;width:var(--sidebar);padding:28px 18px;background:var(--surface);border-right:1px solid var(--border)}
+.logo{padding:0 12px 30px}.logo h1{color:var(--primary);font-size:24px}.logo p{margin-top:4px;color:var(--muted);font-size:12px}
+.sidebar-nav{display:grid;gap:6px}.sidebar-nav a{padding:12px 14px;border-radius:8px;color:var(--muted);font-size:14px}.sidebar-nav a:hover,.sidebar-nav a.active{background:var(--primary-light);color:var(--primary)}.sidebar-nav a.active{font-weight:600}
+.main-area{margin-left:var(--sidebar)}.topbar{display:flex;justify-content:space-between;align-items:center;padding:22px 35px;background:var(--surface);border-bottom:1px solid var(--border)}
+.welcome-label{margin-bottom:4px;color:var(--muted);font-size:13px}.topbar h2{font-size:20px}.profile{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600}.profile-avatar{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:var(--primary);color:#fff}
+.page-container{max-width:1400px;margin:auto;padding:35px}section+section{margin-top:25px}
+.auth-page{min-height:100vh;display:grid;place-items:center;padding:20px}.auth-card{width:min(430px,100%);padding:30px}.auth-logo{text-align:center}.auth-tabs{display:grid;grid-template-columns:1fr 1fr;margin:25px 0 20px;border-bottom:1px solid var(--border)}.tab{padding:12px;border:0;background:none;color:var(--muted);cursor:pointer}.tab.active{color:var(--primary);border-bottom:2px solid var(--primary)}.hidden{display:none!important}.full{width:100%}.form-error{min-height:20px;margin-top:10px;color:var(--danger);font-size:13px}.form-success{color:var(--success);font-size:13px}

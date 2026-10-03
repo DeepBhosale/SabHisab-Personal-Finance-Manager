@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css"><title>SabHisab - Settings</title></head>
+<body><div class="app"><aside class="sidebar">
+<div class="logo"><h1>SabHisab</h1><p>Personal Finance</p></div>
+<nav class="sidebar-nav">
+<a href="index.html">Dashboard</a>
+<a href="transactions.html">Transactions</a>
+<a href="budgets.html">Budgets</a>
+<a href="goals.html">Goals</a>
+<a href="accounts.html">Accounts</a>
+<a href="reports.html">Reports</a>
+<a href="settings.html">Settings</a>
+</nav>
+</aside><div class="main-area"><header class="topbar">
+<div><p class="welcome-label">Financial Overview</p><h2>Welcome, <span data-user-name></span> 👋</h2></div>
+<div class="profile"><div class="profile-avatar" data-user-initials></div><span data-user-name></span></div>
+</header>
+<main class="page-container">
+<section class="page-header"><div><p class="eyebrow">Preferences</p><h1>Settings</h1><p class="page-description">Manage your account preferences.</p></div></section>
+<section class="settings-grid">
+<nav class="card settings-nav"><a class="active" href="settings.html">Profile</a><a href="#">Preferences</a></nav>
+<div class="card">
+<div class="section-heading"><p class="eyebrow">Account</p><h2>Profile Settings</h2></div>
+<form id="settings-form">
+<div class="setting-row"><div><h3>Name</h3><p>Your display name</p></div><input class="setting-input" name="name" required></div>
+<div class="setting-row"><div><h3>Email</h3><p>Email cannot be changed here.</p></div><input class="setting-input" name="email" disabled></div>
+<div class="setting-row"><div><h3>Currency</h3><p>Display currency</p></div><select class="setting-input" name="currency"><option value="INR">₹ INR</option><option value="USD">$ USD</option><option value="EUR">€ EUR</option></select></div>
+<div class="setting-row"><div><h3>Monthly Budget</h3><p>Default overall monthly limit</p></div><input class="setting-input" name="monthly_budget" type="number" min="0"></div>
+<div class="form-actions"><button class="primary-button">Save Changes</button></div>
+<p class="form-success" id="settings-message"></p>
+</form>
+</div>
+</section>
+</main></div></div>
+<script src="js/app.js"></script><script src="js/settings.js"></script>
+</body></html>
